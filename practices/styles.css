@@ -10,24 +10,7 @@ header {
     background: linear-gradient(135deg, #E9DDF7, #F8E8F0, #E5E1FA);
     border: 1px solid #E0D1F0;
     border-radius: 28px;
-    box-shadow: 0 12px 35px rgba(87, 56, 112, 0.10);
-}
-
-header h1 {
-    margin: 0;
-    color: #51336F;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(34px, 5vw, 58px);
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-header p {
-    margin: 5px 0 25px;
-    color: #88649B;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    transition: all 0.25s ease;
 }
 
 /* ===== NAVIGATION ===== */
@@ -41,6 +24,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.9);
     border-radius: 16px;
+    transition: all 0.25s ease;
+    box-shadow: 0 12px 30px rgba(91, 58, 119, 0.20);
 }
 
 nav a {
@@ -52,12 +37,14 @@ nav a {
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.25s ease;
+    box-shadow: 0 12px 30px rgba(91, 58, 119, 0.20);
 }
 
 nav a:hover {
     color: white;
     background-color: #7952A0;
     transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(91, 58, 119, 0.30);
 }
 
 /* ===== MAIN ===== */
@@ -66,6 +53,23 @@ main {
     max-width: 1050px;
     margin: 40px auto;
     padding: 0 24px;
+}
+
+header h1 {
+    margin: 0;
+    color: #51336F;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(34px, 5vw, 58px);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+ header p {
+    margin: 5px 0 25px;
+    color: #88649B;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 /* ===== INTRO ===== */
@@ -115,6 +119,7 @@ section img {
 
 section img:hover {
     transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 12px 30px rgba(91, 58, 119, 0.30);    
 }
 
 /* ===== HEADINGS ===== */
